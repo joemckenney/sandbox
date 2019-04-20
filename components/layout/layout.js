@@ -19,7 +19,7 @@ function Layout({
   return (
     <div
       {...attrs}
-      className={`layout ${styles.layout}`}
+      className={styles.layout}
       data-flex={initial ? 'initial' : _static ? 'static' : 'auto'}
       data-inset={inset}
       data-overflow={overflow}

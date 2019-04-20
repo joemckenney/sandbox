@@ -10,38 +10,38 @@
   --gray-600: #444d56;
   --gray-700: #24292e;
 
---lime-100: #76d668;
---lime-200: #63d052;
---lime-300: #4fca3d;
---lime-400: #3cc427;
---lime-500: #29bf12;
---lime-600: #26ae11;
+  --lime-100: #76d668;
+  --lime-200: #63d052;
+  --lime-300: #4fca3d;
+  --lime-400: #3cc427;
+  --lime-500: #29bf12;
+  --lime-600: #26ae11;
 
---chartreuse-100: #c9ff8f;
---chartreuse-200: #c1ff7f;
---chartreuse-300: #baff6f;
---chartreuse-400: #b2ff5f;
---chartreuse-500: #abff4f;
---chartreuse-600: #9ce848;
+  --chartreuse-100: #c9ff8f;
+  --chartreuse-200: #c1ff7f;
+  --chartreuse-300: #baff6f;
+  --chartreuse-400: #b2ff5f;
+  --chartreuse-500: #abff4f;
+  --chartreuse-600: #9ce848;
 
---turquoise-100: #61d5d5;
---turquoise-200: #4bcfcf;
---turquoise-300: #34c9c9;
---turquoise-400: #1ec3c3;
---turquoise-500: #08bdbd;
---turquoise-600: #08acac;
+  --turquoise-100: #61d5d5;
+  --turquoise-200: #4bcfcf;
+  --turquoise-300: #34c9c9;
+  --turquoise-400: #1ec3c3;
+  --turquoise-500: #08bdbd;
+  --turquoise-600: #08acac;
 
---watermelon-100: #f66d84;
---watermelon-200: #f55973;
---watermelon-300: #f44461;
---watermelon-400: #f32f50;
---watermelon-500: #f21b3f;
---watermelon-600: #dc193a;
+  --watermelon-100: #f66d84;
+  --watermelon-200: #f55973;
+  --watermelon-300: #f44461;
+  --watermelon-400: #f32f50;
+  --watermelon-500: #f21b3f;
+  --watermelon-600: #dc193a;
 
---tangelo-100: #ffbe69;
---tangelo-200: #ffb454;
---tangelo-300: #ffab3e;
---tangelo-400: #ffa229;
---tangelo-500: #ff9914;
---tangelo-600: #e88c13;
+  --tangelo-100: #ffbe69;
+  --tangelo-200: #ffb454;
+  --tangelo-300: #ffab3e;
+  --tangelo-400: #ffa229;
+  --tangelo-500: #ff9914;
+  --tangelo-600: #e88c13;
 }
