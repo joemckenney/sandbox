@@ -1,0 +1,57 @@
+.layout {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  flex-basis: 100%;
+
+  & > * {
+    /*
+    Children are sized according their width and height properties.  They grow
+    to absorb any extra free space in the layout, and shrink to their minimum
+    size to fit the layout
+    */
+    flex: auto;
+    display: flex;
+  }
+
+  &[data-flex='auto'] {
+    flex: auto;
+  }
+
+  &[data-flex='static'] {
+    flex: none;
+  }
+
+  &[data-flex='initial'] {
+    flex: initial;
+  }
+
+  &[data-type='vertical'] {
+    flex-direction: column;
+
+    & > * {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &[data-type='horizontal'] {
+    flex-direction: row;
+
+    & > * {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

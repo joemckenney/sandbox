@@ -1,0 +1,7 @@
+@import './properties/color.css';
+@import './properties/size.css';
+
+.app {
+  color: var(--tangelo-300);
+  font-size: var(--size-4);
+}
