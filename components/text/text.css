@@ -1,0 +1,105 @@
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: block;
+
+  &[data-size="small"] {
+    font-size: var(--font-size-small);
+  }
+
+  &[data-size="regular"] {
+    font-size: var(--font-size-regular);
+  }
+
+  &[data-size="large"] {
+    font-size: var(--font-size-large);
+  }
+
+  &[data-size="title"] {
+    font-size: var(--font-size-title);
+  }
+
+  &[data-size="header"] {
+    font-size: var(--font-size-header);
+  }
+
+  &[data-weight="light"] {
+    font-weight: var(--font-weight-light);
+  }
+
+  &[data-weight="regular"] {
+    font-weight: var(--font-weight-regular);
+  }
+
+  &[data-weight="medium"] {
+    font-weight: var(--font-weight-medium);
+  }
+
+  &[data-weight="bold"] {
+    font-weight: var(--font-weight-bold);
+  }
+
+  &[data-weight="black"] {
+    font-weight: var(--font-weight-black);
+  }
+
+  &[data-decoration="underline"] {
+    text-decoration: underline;
+  }
+
+
+  &[data-decoration="dotted"] {
+    text-decoration: underline dotted;
+  }
+
+  &[data-decoration="line-through"] {
+    text-decoration: line-through;
+  }
+
+  &[data-alignment="start"] {
+    text-align: start;
+  }
+
+  &[data-alignment="center"] {
+    text-align: center;
+  }
+
+  &[data-alignment="end"] {
+    text-align: end;
+  }
+
+  &[data-direction="ltr"] {
+    direction: ltr;
+  }
+
+  &[data-direction="rtl"] {
+    direction: rtl;
+  }
+
+  &[data-transform="capitalize"] {
+    text-transform: capitalize;
+  }
+
+  &[data-transform="lowercase"] {
+    text-transform: lowercase;
+  }
+
+  &[data-transform="uppercase"] {
+    text-transform: uppercase;
+  }
+
+  &[data-wrap="true"] {
+    white-space: normal;
+  }
+
+  &[data-wrap="false"] {
+    white-space: nowrap;
+  }
+
+  &[data-display='inline'] {
+    display: inline;
+  }
+
+}
+

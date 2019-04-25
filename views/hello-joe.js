@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/app.css';
 import Layout from '../components/layout/layout.js';
+import Text from '../components/text/text.js';
 const HelloJoe = () => {
   return (
     <React.Fragment>
@@ -9,7 +10,7 @@ const HelloJoe = () => {
         <Layout/>
         <Layout static>
           <Layout/>
-          <div className={styles.app}>Hello Joe</div>
+          <Text alignment='center' className={styles.app}>Hello Joe</Text>
           <Layout/>
         </Layout>
         <Layout/>
