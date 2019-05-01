@@ -3,6 +3,7 @@ const PropTypes = require('prop-types');
 
 import styles from './layout.css';
 
+
 function Layout({
   children,
   inset,
@@ -33,8 +34,8 @@ function Layout({
 Layout.propTypes = {
   auto: PropTypes.bool,
   initial: PropTypes.bool,
-  inset: PropTypes.string,
-  spacing: PropTypes.string,
+  inset: PropTypes.oneOf(styles.inset.split(',')),
+  spacing: PropTypes.oneOf(styles.spacing.split(',')),
   static: PropTypes.bool,
   type: PropTypes.oneOf(['vertical', 'horizontal'])
 };
