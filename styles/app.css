@@ -1,6 +1,9 @@
-@import './properties/color.css';
-@import './properties/size.css';
+@value (
+  chartreuse100,
+  tangelo300
+) from './properties/color.css';
 
 .app {
-  color: var(--tangelo-300);
+  color: tangelo300;
+  background-color: chartreuse100;
 }

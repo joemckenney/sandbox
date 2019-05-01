@@ -1,9 +1,9 @@
-:root {
-  --size-0: 1px;
-  --size-1: 2px;
-  --size-2: 4px;
-  --size-3: 8px;
-  --size-4: 16px;
-  --size-5: 32px;
-  --size-6: 64px;
+:export {
+  size0: 1px;
+  size1: 2px;
+  size2: 4px;
+  size3: 8px;
+  size4: 16px;
+  size5: 32px;
+  size6: 64px;
 }

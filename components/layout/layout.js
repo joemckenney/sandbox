@@ -1,7 +1,12 @@
-const React = require('react');
-const PropTypes = require('prop-types');
+import React from 'react';
+import PropTypes from 'prop-types';
+import unflatten from  'unflatten';
 
-import styles from './layout.css';
+import layoutStyles from './layout.css';
+import colors from '../../styles/properties/color.css';
+
+
+const styles = unflatten(layoutStyles, { separator: '-' });
 
 
 function Layout({
@@ -14,6 +19,7 @@ function Layout({
   auto,
   ...attrs
 }) {
+
 
 
   return (
@@ -34,8 +40,8 @@ function Layout({
 Layout.propTypes = {
   auto: PropTypes.bool,
   initial: PropTypes.bool,
-  inset: PropTypes.oneOf(styles.inset.split(',')),
-  spacing: PropTypes.oneOf(styles.spacing.split(',')),
+  inset: PropTypes.oneOf(Object.keys(styles.inset)),
+  spacing: PropTypes.oneOf(Object.keys(styles.spacing)),
   static: PropTypes.bool,
   type: PropTypes.oneOf(['vertical', 'horizontal'])
 };

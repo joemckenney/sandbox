@@ -1,7 +1,7 @@
-:root {
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
+:export {
+  fontWeightLight: 300;
+  fontWeightRegular: 400;
+  fontWeightMedium: 500;
+  fontWeightBold: 700;
+  fontWeightBlack: 900;
 }

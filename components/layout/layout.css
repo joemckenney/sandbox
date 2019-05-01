@@ -1,11 +1,15 @@
-@import '../../styles/properties/size.css';
 
-/*
- value
- */
-@value inset: 0,1,2,3,4,5;
-@value spacing: 0,1,2,3,4,5;
+@value (
+  size1 as inset-small,
+  size2 as inset-medium,
+  size3 as inset-large
+) from '../../styles/properties/size.css';
 
+@value (
+  size3 as spacing-small,
+  size4 as spacing-medium,
+  size5 as spacing-large
+) from '../../styles/properties/size.css';
 
 .layout {
   display: flex;
@@ -33,12 +37,14 @@
   }
 
 
-  @each $i in 0,1,2,3,4,5 {
-    &[data-inset='$(i)'] {
-      padding: var(--size-$(i));
+  @each $k, $v in (0,1,2),(inset-small,inset-medium,inset-large) {
+    &[data-inset='$(k)'] {
+      padding: $(v);
     }
-    &[data-spacing='0'] {
-      margin: var(--size-$(i));
+  }
+  @each $k, $v in (0,1,2),(spacing-small,spacing-medium,spacing-large) {
+    &[data-spacing='$(k)'] {
+      margin: $(v);
     }
   }
 
